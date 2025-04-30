@@ -1,0 +1,77 @@
+.parent{
+    display: flex;
+    box-sizing: border-box;
+    top: 0;
+}
+.first{
+    background-color: rgb(60, 124, 197);
+    display: flex;
+    justify-content: flex-start;
+    padding-left: 10px;
+    height: 6vh;
+    width: 100vw;
+    gap: 30px;
+    align-items: center;
+    position: fixed;
+    font-size: 20px;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+}
+html{
+    background-color: #328f8a;
+    background-image: linear-gradient(45deg, #328f8a, #08ac4b);
+    font-family: "Roboto", sans-serif;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 25vw;
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.login_box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 10px;
+}
+#user,#upwd{
+    background-color: #f2f2f2;
+    padding: 15px;
+    margin: 15px;
+    width: 70%;
+    border: 0px;
+}
+.login_btn{
+    background-color:  #328f8a;
+    background-image: linear-gradient(45deg, #328f8a, #08ac4b);
+    width: 78%;
+    padding: 15px;
+    margin: 15px;
+    border: 0px;
+    color: rgb(65, 59, 59);
+}
+.log_head{
+    font-size: 25px;
+    font-weight: bold;
+}
+.log_p{
+    font-size: 16px;
+    color: rgb(44, 42, 42);
+    font-weight: lighter;
+}
+.notreg{
+    color: gray;
+    font-size: 14px;
+}
+.new_ac{
+    text-decoration: none;
+    color: #4CAF50;
+}

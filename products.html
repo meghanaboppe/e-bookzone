@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html >
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial--scale=1.0">
+    <title>Adventure Books</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <style>
+        .parent{
+            display: flex;
+            width: 100vw;
+            background-color: rgb(60, 124, 197);
+        }
+        .first{
+            display: flex;
+            justify-content: flex-start;
+            height: 6vh;
+            width: 100%;
+            gap: 30px;
+            align-items: center;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+        }
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            
+            color: white;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            margin-left: 20px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 12px;
+            line-height:2.5px;
+        }
+
+        .container {
+            display: flex;
+            padding: 10px;
+        }
+        .sidebar {
+            width: 200px;
+            background-color: #D6E4F0;
+            padding: 30px;
+            padding-right: 20px;
+            height:200px;
+            margin-left:10px;
+        }
+        h2{
+            font-size: 15px;
+        }
+
+        .sidebar ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .sidebar ul li {
+            margin-bottom: 10px;
+        }
+
+        .sidebar ul li a {
+            text-decoration: none;
+            color: #333;
+        }
+
+        .content {
+            flex-grow: 1;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding-top: 10px;
+        }
+        .content1,.content2,.content3{
+            flex-grow: 1;
+            padding: 20px;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+            padding-top: 10px;
+            padding-left: 250px;
+        }
+        .book {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .book img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .book h3 {
+            margin-bottom: 5px;
+        }
+
+        .book p {
+            margin-bottom: 10px;
+        }
+
+        .book button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 14px;
+            cursor: pointer;
+        }
+        .btn{
+            display: block;
+            border-radius: 5px;
+            color: white;
+            background-color: blue;
+            font-size: 20px;
+            text-decoration: none;
+            width: fit-content;
+            height: fit-content;
+            padding: 5px;
+        }
+       
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <div class="first">
+           <a href="index.html">Home</a>
+           <a href="#">Products</a>
+           <a href="about.html">About</a>
+           <a href="book.html">Login</a>
+           <a href="register1.html">Create Account</a>
+        </div>
+    </div>
+    <div class="container">
+        <aside class="sidebar">
+            <h2>Category</h2>
+            <ul>
+                <li><a href="#">Adventure</a></li>
+                <li><a href="#">Thriller</a></li>
+                <li><a href="#">Romantic</a></li>
+                <li><a href="#">Comedy</a></li>
+            </ul>
+        </aside>
+       <!---Adventure-->
+        
+        <main class="content">
+            <div class="book">
+                <img src ="https://e-book-03.netlify.app/images/Adv1.jfif">
+                <p>Price: 200</p>
+                <button>Buy</button>
+                <i class="bx bx-cart"></i>
+            </div>
+
+            <div class="book">
+               <img src= "https://e-book-03.netlify.app/images/Adv2.jfif">
+                <p>Price: 250</p>
+                <button>Buy</button>
+                <i class="bx bx-cart"></i>
+            </div>
+
+            <div class="book">
+                <img src="https://e-book-03.netlify.app/images/Adv3.jfif">
+                <p>Price: 180</p>
+                <button>Buy</button>
+                <i class="bx bx-cart"></i>
+            </div>
+
+            <div class="book">
+                <img src="https://e-book-03.netlify.app/images/Adv4.jfif">
+                <p>Price: 460</p>
+                <button>Buy</button>
+                <i class="bx bx-cart"></i>
+            </div>
+
+            <div class="book">
+                <img src="https://e-book-03.netlify.app/images/Adv5.jfif">
+                <p>Price: 100</p>
+                <button>Buy</button>
+                <i class="bx bx-cart"></i>
+            </div>
+
+            <div class="book">
+                <img src="https://e-book-03.netlify.app/images/Adv6.jfif">
+                 <p>Price: 304</p>
+                <button>Buy</button>
+                <i class="bx bx-cart"></i>
+            </div>
+
+            <div class="book">
+                <img src="https://e-book-03.netlify.app/images/adv7.jfif">
+                
+                <p>Price: 340</p>
+                <button>Buy</button>
+                <i class="bx bx-cart"></i>
+            </div>
+            <div class="book">
+                <img src="https://e-book-03.netlify.app/images/adv8.jfif">
+                
+                <p>Price: 340</p>
+                <button>Buy</button>
+                <i class="bx bx-cart"></i>
+            </div>
+        </main>
+        </div>
+    </div>
+    <!----thiller-->
+    <div>
+        <h1 style="margin-left: 250px;">Thriller</h1>
+    <main class="content1">
+
+        <div class="book">
+            <img src ="https://e-book-03.netlify.app/images/th1.jfif">
+            <p>Price: 120</p>
+            <button>Buy</button>
+            <i class="bx bx-cart"></i>
+        </div>
+
+        <div class="book">
+           <img src= "https://e-book-03.netlify.app/images/th2.jfif">
+            <p>Price: 402</p>
+            <button>Buy</button>
+            <i class="bx bx-cart"></i>
+        </div>
+
+        <div class="book">
+            <img src="https://e-book-03.netlify.app/images/th3.jfif">
+            <p>Price: 299</p>
+            <button>Buy</button>
+            <i class="bx bx-cart"></i>
+        </div>
+
+        <div class="book">
+            <img src="https://e-book-03.netlify.app/images/th4.jfif">
+            <p>Price: 150</p>
+            <button>Buy</button>
+            <i class="bx bx-cart"></i>
+        </div>
+
+        <div class="book">
+            <img src="https://e-book-03.netlify.app/images/th5.jfif">
+            <p>Price: 300</p>
+            <button>Buy</button>
+            <i class="bx bx-cart"></i>
+        </div>
+        <div class="book">
+            <img src="https://e-book-03.netlify.app/images/th6.jfif">
+            <p>Price: 389</p>
+            <button>Buy</button>
+            <i class="bx bx-cart"></i>
+        </div>
+        <div class="book">
+            <img src="https://e-book-03.netlify.app/images/th7.jfif">    
+            <p>Price: 269</p>
+            <button>Buy</button>
+            <i class="bx bx-cart"></i>
+        </div>
+        <div class="book">
+                <img src="https://e-book-03.netlify.app/images/th8.jfif">  
+                <p>Price: 451</p>
+                <button>Buy</button>
+                <i class="bx bx-cart"></i>
+            </div>   
+    </main>
+</div>
+<!--romantic-->
+<div>
+    <h1 style="margin-left: 250px;">Romantic</h1>
+<main class="content2">
+    <div class="book">
+        <img src ="https://e-book-03.netlify.app/images/r1.jfif">
+        <p>Price: 120</p>
+        <button>Buy</button>
+        <i class="bx bx-cart"></i>
+    </div>
+    <div class="book">
+       <img src= "https://e-book-03.netlify.app/images/r2.jfif">
+        <p>Price: 402</p>
+        <button>Buy</button>
+        <i class="bx bx-cart"></i>
+    </div>
+
+    <div class="book">
+        <img src="https://e-book-03.netlify.app/images/r3.jfif">
+        <p>Price: 299</p>
+        <button>Buy</button>
+        <i class="bx bx-cart"></i>
+    </div>
+
+    <div class="book">
+        <img src="https://e-book-03.netlify.app/images/r4.jfif">
+        <p>Price: 150</p>
+        <button>Buy</button>
+        <i class="bx bx-cart"></i>
+    </div>
+
+    <div class="book">
+        <img src="https://e-book-03.netlify.app/images/r5.jfif">
+        <p>Price: 300</p>
+        <button>Buy</button>
+        <i class="bx bx-cart"></i>
+    </div>
+    <div class="book">
+        <img src="https://e-book-03.netlify.app/images/r6.jfif"> 
+        <p>Price: 389</p>
+        <button>Buy</button>
+        <i class="bx bx-cart"></i>
+    </div>
+    <div class="book">
+        <img src="https://e-book-03.netlify.app/images/r7.jfif">    
+        <p>Price: 269</p>
+        <button>Buy</button>
+        <i class="bx bx-cart"></i>
+    </div>
+    <div class="book">
+            <img src="https://e-book-03.netlify.app/images/r8.jfif"> 
+            <p>Price: 451</p>
+            <button>Buy</button>
+            <i class="bx bx-cart"></i>
+        </div>
+</main>
+</div>
+<!---comedy-->
+<div>
+    <h1 style="margin-left: 250px;">Comedy</h1>
+<main class="content3">
+    <div class="book">
+        <img src ="https://e-book-03.netlify.app/images/c1.jfif">
+        <p>Price: 400</p>
+        <button>Buy</button>
+        <i class="bx bx-cart"></i>
+    </div>
+    <div class="book">
+       <img src= "https://e-book-03.netlify.app/images/c2.jfif">
+        <p>Price: 299</p>
+        <button>Buy</button>
+        <i class="bx bx-cart"></i>
+    </div>
+    <div class="book">
+        <img src="https://e-book-03.netlify.app/images/c3.jfif">
+        <p>Price: 349</p>
+        <button>Buy</button>
+        <i class="bx bx-cart"></i>
+    </div>
+    <div class="book">
+        <img src="https://e-book-03.netlify.app/images/c4.jfif">
+        <p>Price: 299</p>
+        <button>Buy</button>
+        <i class="bx bx-cart"></i>
+    </div>
+    <div class="book">
+        <img src="https://e-book-03.netlify.app/images/c5.jfif">  
+        <p>Price: 199</p>
+        <button>Buy</button>
+        <i class="bx bx-cart"></i>
+    </div>
+    <div class="book">
+        <img src="https://e-book-03.netlify.app/images/c6.jfif">
+        <p>Price: 149</p>
+        <button>Buy</button>
+        <i class="bx bx-cart"></i>
+    </div>
+    <div class="book">
+        <img src="https://e-book-03.netlify.app/images/c7.jfif">    
+        <p>Price: 349</p>
+        <button>Buy</button>
+        <i class="bx bx-cart"></i>
+    </div>
+    <div class="book">
+            <img src="https://e-book-03.netlify.app/images/c8.jfif"> 
+            <p>Price: 250</p>
+            <button>Buy</button>
+            <i class="bx bx-cart"></i>
+        </div>   
+</main>
+</div>
+<a class="btn" href="index.html" style="margin-left: 250px;">Back-></a>
+</body>
+</html>
